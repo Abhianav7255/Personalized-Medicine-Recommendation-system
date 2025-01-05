@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.recommendations {
+    margin-top: 20px;
+}
+
+ul.list-group {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+    border-color: #23a943;
+}
+
+select.form-select {
+    padding: 10px;
+    font-size: 1rem;
+}
