@@ -1,19 +1,124 @@
-# Personalized-Medicine-Recommendation-system
-A Medicine Recommendation System in machine learning (ML) is a software application designed to assist healthcare professionals and patients in selecting the most appropriate medication based on various factors such as medical history, symptoms, demographics, and drug interactions. Here's a breakdown of its components and functionality:
+# Personalized Health Care
 
-Data Collection and Preprocessing: The system collects and preprocesses vast amounts of medical data, including patient records, electronic health records (EHRs), clinical trials data, drug information, and research articles. This data is cleaned, standardized, and structured for analysis.
+This project is a web-based application that provides alternative medicine recommendations. Users can input a medicine name, and the application will suggest alternative medicines, complete with links to purchase them.
 
-Feature Selection: Relevant features are extracted from the collected data, such as patient demographics, medical history, laboratory test results, symptoms, diagnoses, and drug characteristics. Feature selection techniques help identify the most informative variables for predicting medication recommendations.
+---
 
-Machine Learning Models: Various machine learning algorithms are employed to develop predictive models based on the selected features. Common ML techniques include decision trees, random forests, support vector machines (SVM), logistic regression, and neural networks. These models learn patterns from historical data to make predictions about suitable medications for new patients.
+## Features
 
-Model Training and Evaluation: The ML models are trained on labeled datasets, where each instance includes patient attributes and the corresponding prescribed medication. The training process involves optimizing model parameters to minimize prediction errors. The performance of the trained models is evaluated using metrics such as accuracy, precision, recall, and F1-score through techniques like cross-validation.
+- User-friendly interface for selecting medicines.
+- Integration with `PharmEasy` for easy access to purchasing options.
+- Stylish and responsive design using Bootstrap and Select2.
+- Displays a list of recommended alternatives for selected medicines.
 
-Recommendation Generation: Once the models are trained and validated, the system can generate medication recommendations for new patients. When a user inputs relevant information about a patient (e.g., age, gender, medical history, symptoms), the system applies the trained models to predict the most suitable medications for that individual.
+---
 
-Personalization and Adaptation: The system may incorporate personalized medicine approaches by considering individual patient characteristics and preferences. It can also adapt over time as new data becomes available, continuously improving its recommendations through techniques like online learning.
+## Technologies Used
 
-User Interface: The system provides a user-friendly interface for healthcare professionals, pharmacists, or patients to interact with. This interface allows users to input patient information, view recommended medications, explore explanations for recommendations, and adjust parameters if necessary.
+- **HTML5**
+- **CSS3**
+- **Bootstrap 4.5**: For responsive and modern UI design.
+- **Select2**: For enhanced dropdown functionality.
+- **Jinja2**: For rendering dynamic content (used in the template).
 
-Integration with Healthcare Systems: The recommendation system can be integrated with existing healthcare information systems, such as electronic medical records (EMRs) or pharmacy management systems, to streamline the medication selection process and ensure seamless adoption by healthcare providers.
+---
 
+## Prerequisites
+
+1. **Python** and Flask for backend functionality.
+2. A list of medicines and their alternatives stored in a backend system or database.
+
+---
+
+## File Structure
+
+```plaintext
+project-directory
+├── templates
+│   ├── index.html  # Main HTML template
+├── static
+│   ├── css  # Custom CSS (if any)
+│   ├── js   # Custom JavaScript (if any)
+├── app.py        # Flask backend
+├── requirements.txt
+```
+
+---
+
+## Setup Instructions
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/personalized-health-care.git
+   cd personalized-health-care
+   ```
+
+2. **Install Dependencies:**
+
+   Ensure you have Python installed, then run:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application:**
+
+   ```bash
+   python app.py
+   ```
+
+4. **Access the Application:**
+
+   Open your browser and navigate to:
+
+   ```
+   http://127.0.0.1:5000
+   ```
+
+---
+
+## How to Use
+
+1. **Select a Medicine:**
+   Use the dropdown menu to select the name of a medicine.
+
+2. **Get Recommendations:**
+   Click the "Recommend Medicine" button to see alternatives.
+
+3. **Purchase Medicines:**
+   Use the "Click to Buy" button next to each recommended medicine to open its purchasing link on `PharmEasy`.
+
+---
+
+## Example Output
+
+1. User selects `Paracetamol` from the dropdown.
+2. Application displays recommendations:
+
+   ```plaintext
+   Recommended Medicines for Paracetamol:
+   1. Crocin
+   2. Dolo 650
+   3. Calpol
+   ```
+
+Each recommendation has a "Click to Buy" button linking to its respective page on `PharmEasy`.
+
+---
+
+## Contributions
+
+Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+**[Abhinav Kumar](https://github.com/Abhianav7255)**
